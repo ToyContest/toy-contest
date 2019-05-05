@@ -11,13 +11,14 @@ import UIKit
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var logoImage: UIImageView!
+    @IBOutlet weak var logoConstraint: NSLayoutConstraint!
     @IBOutlet weak var nicknameView: UIView!
     @IBOutlet weak var nicknameTextField: UITextField!
     @IBOutlet weak var nicknameViewConstraint: NSLayoutConstraint!
     @IBOutlet weak var loginBtn: UIButton!
     
     var timer: Timer!
-    
+    var logoConstraintInitValue: CGFloat = 0
     var constraintInitValue: CGFloat = 0
     var check = true
     
@@ -30,11 +31,13 @@ class LoginViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.registerForKeyboardNotifications()
+        self.addTimer()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.unregisterForKeyboardNotifications()
+        self.invalidTimer()
     }
     
     func setupView() {
@@ -65,7 +68,7 @@ class LoginViewController: UIViewController {
     }
     
     func addTimer() {
-        timer = Timer.scheduledTimer(timeInterval: TimeInterval(4), target: self, selector: #selector(handleTimer), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: TimeInterval(3.7), target: self, selector: #selector(handleTimer), userInfo: nil, repeats: true)
     }
     
     func invalidTimer() {
@@ -73,11 +76,15 @@ class LoginViewController: UIViewController {
     }
     
     @objc func handleTimer() {
-        UIView.animate(withDuration: 2.0, delay: 0, options: .curveEaseInOut, animations: {
-            
+        print("ddd")
+        UIView.animate(withDuration: 1.7, delay: 0, options: .curveEaseInOut, animations: {
+            self.logoImage.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
         }) { (_) in
-            
+            UIView.animate(withDuration: 1.7, delay: 0.1, options: .curveEaseInOut, animations: {
+                self.logoImage.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+            })
         }
+        self.view.layoutIfNeeded()
         
     }
 

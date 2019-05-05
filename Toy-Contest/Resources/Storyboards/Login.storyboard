@@ -117,6 +117,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="pXV-JO-VeI" id="UBq-F1-ONe"/>
+                        <outlet property="logoConstraint" destination="fRY-MD-WOv" id="AMR-wy-s1X"/>
                         <outlet property="logoImage" destination="zex-FP-3aD" id="tgT-ML-Aqz"/>
                         <outlet property="nicknameTextField" destination="noi-1g-Z3C" id="OQU-73-G2t"/>
                         <outlet property="nicknameView" destination="PY4-8s-uqA" id="txR-ra-SQA"/>
