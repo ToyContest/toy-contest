@@ -17,6 +17,12 @@
 		8E8A51C0227EF43700B868C7 /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A51BF227EF43700B868C7 /* ResultVC.swift */; };
 		8E8A51C5227EF8CF00B868C7 /* Toy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A51C4227EF8CF00B868C7 /* Toy.swift */; };
 		8E8A51C7227EFAF500B868C7 /* ContestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A51C6227EFAF500B868C7 /* ContestManager.swift */; };
+		8EED53A4227F1D3B00076086 /* ContestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EED53A3227F1D3B00076086 /* ContestService.swift */; };
+		8EED53A6227F1D6C00076086 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EED53A5227F1D6C00076086 /* APIManager.swift */; };
+		8EED53A8227F1DCA00076086 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EED53A7227F1DCA00076086 /* NetworkResult.swift */; };
+		8EED53AB227F29F100076086 /* UIButton+imageFromUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EED53AA227F29F100076086 /* UIButton+imageFromUrl.swift */; };
+		8EED53AD227F2D9900076086 /* UIViewController+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EED53AC227F2D9900076086 /* UIViewController+extensions.swift */; };
+		8EED53AF227F2DFC00076086 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EED53AE227F2DFC00076086 /* default.png */; };
 		B638D6CD5FCC5F796B66E954 /* Pods_Toy_Contest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C97AF63DDF3F216FE3E0247 /* Pods_Toy_Contest.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +41,12 @@
 		8E8A51BF227EF43700B868C7 /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
 		8E8A51C4227EF8CF00B868C7 /* Toy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toy.swift; sourceTree = "<group>"; };
 		8E8A51C6227EFAF500B868C7 /* ContestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContestManager.swift; sourceTree = "<group>"; };
+		8EED53A3227F1D3B00076086 /* ContestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContestService.swift; path = "Toy-Contest/Sources/Views/ContestService.swift"; sourceTree = SOURCE_ROOT; };
+		8EED53A5227F1D6C00076086 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIManager.swift; path = "Toy-Contest/Sources/Views/APIManager.swift"; sourceTree = SOURCE_ROOT; };
+		8EED53A7227F1DCA00076086 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkResult.swift; path = "Toy-Contest/Sources/Views/NetworkResult.swift"; sourceTree = SOURCE_ROOT; };
+		8EED53AA227F29F100076086 /* UIButton+imageFromUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIButton+imageFromUrl.swift"; path = "Toy-Contest/Sources/Views/UIButton+imageFromUrl.swift"; sourceTree = SOURCE_ROOT; };
+		8EED53AC227F2D9900076086 /* UIViewController+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+extensions.swift"; path = "Toy-Contest/Sources/Views/UIViewController+extensions.swift"; sourceTree = SOURCE_ROOT; };
+		8EED53AE227F2DFC00076086 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
 		D5BEC08F458742383E3641FF /* Pods-Toy-Contest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toy-Contest.release.xcconfig"; path = "Pods/Target Support Files/Pods-Toy-Contest/Pods-Toy-Contest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +111,7 @@
 		579F0826227ECD6C0077036D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8EED53AE227F2DFC00076086 /* default.png */,
 				579F0818227ECB000077036D /* Assets.xcassets */,
 				579F082A227ECE730077036D /* Storyboards */,
 			);
@@ -108,6 +121,7 @@
 		579F0827227ECD6E0077036D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				8EED53A9227F213800076086 /* Model */,
 				8E8A51C3227EF8C600B868C7 /* Views */,
 				579F0829227ECE490077036D /* Extensions */,
 				579F0828227ECE410077036D /* Networking */,
@@ -119,6 +133,9 @@
 		579F0828227ECE410077036D /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				8EED53A3227F1D3B00076086 /* ContestService.swift */,
+				8EED53A5227F1D6C00076086 /* APIManager.swift */,
+				8EED53A7227F1DCA00076086 /* NetworkResult.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -126,6 +143,8 @@
 		579F0829227ECE490077036D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8EED53AA227F29F100076086 /* UIButton+imageFromUrl.swift */,
+				8EED53AC227F2D9900076086 /* UIViewController+extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -153,10 +172,17 @@
 		8E8A51C3227EF8C600B868C7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8EED53A9227F213800076086 /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				8E8A51C4227EF8CF00B868C7 /* Toy.swift */,
 				8E8A51C6227EFAF500B868C7 /* ContestManager.swift */,
 			);
-			path = Views;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EF6DB91ED55B176B0251B9BA /* Frameworks */ = {
@@ -232,6 +258,7 @@
 				579F0819227ECB000077036D /* Assets.xcassets in Resources */,
 				579F0817227ECAFF0077036D /* Main.storyboard in Resources */,
 				579F082E227ECEDF0077036D /* Contest.storyboard in Resources */,
+				8EED53AF227F2DFC00076086 /* default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,11 +322,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EED53AD227F2D9900076086 /* UIViewController+extensions.swift in Sources */,
+				8EED53AB227F29F100076086 /* UIButton+imageFromUrl.swift in Sources */,
 				8E8A51C5227EF8CF00B868C7 /* Toy.swift in Sources */,
 				579F0812227ECAFF0077036D /* AppDelegate.swift in Sources */,
+				8EED53A4227F1D3B00076086 /* ContestService.swift in Sources */,
 				8E8A51C0227EF43700B868C7 /* ResultVC.swift in Sources */,
 				8E8A51BE227EF42900B868C7 /* ContestVC.swift in Sources */,
 				8E8A51C7227EFAF500B868C7 /* ContestManager.swift in Sources */,
+				8EED53A6227F1D6C00076086 /* APIManager.swift in Sources */,
+				8EED53A8227F1DCA00076086 /* NetworkResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

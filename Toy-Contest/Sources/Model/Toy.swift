@@ -11,17 +11,11 @@ import Foundation
 class Toy {
     var imgUrl = ""
     var name = ""
-    var num = 0
     
     init() {}
     
-    init(imgUrl : String, name : String, num : Int) {
+    init(imgUrl : String, name : String) {
         self.imgUrl = imgUrl
         self.name = name
-        self.num = num
-    }
-    
-    func print() {
-        Swift.print(self.name, " ", self.num)
     }
 }
