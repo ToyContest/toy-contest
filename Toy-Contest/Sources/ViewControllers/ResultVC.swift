@@ -10,10 +10,43 @@ import UIKit
 
 class ResultVC: UIViewController {
     @IBOutlet weak var shareBtn: UIButton!
+    @IBOutlet weak var logoimage: UIImageView!
+    
+    var timer: Timer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.addTimer()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.invalidTimer()
+    }
+    
+    func addTimer() {
+        timer = Timer.scheduledTimer(timeInterval: TimeInterval(2), target: self, selector: #selector(handleTimer), userInfo: nil, repeats: true)
+    }
+    
+    func invalidTimer() {
+        timer.invalidate()
+    }
+    
+    @objc func handleTimer() {
+        UIView.animate(withDuration: 0.9, delay: 0, options: .curveEaseInOut, animations: {
+            self.logoimage.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+        }) { (_) in
+            UIView.animate(withDuration: 0.9, delay: 0.1, options: .curveEaseInOut, animations: {
+                self.logoimage.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+            })
+        }
+        self.view.layoutIfNeeded()
+        
     }
     
     func setup() {

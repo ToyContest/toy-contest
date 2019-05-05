@@ -36,8 +36,8 @@ class CustomTabBarController: UITabBarController {
     }
     
     @objc func menuButtonAction(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        if let vc = storyboard.instantiateViewController(withIdentifier: "temp") as? TempViewController {
+        let storyboard = UIStoryboard(name: "Contest", bundle: nil)
+        if let vc = storyboard.instantiateViewController(withIdentifier: "Contest") as? ContestVC {
             vc.modalPresentationStyle = .fullScreen
             present(vc, animated: true)
         }

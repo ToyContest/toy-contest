@@ -13,7 +13,7 @@
         <!--ContestVC-->
         <scene sceneID="xKN-I8-n31">
             <objects>
-                <viewController id="h6S-XX-CuE" customClass="ContestVC" customModule="Toy_Contest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Contest" id="h6S-XX-CuE" customClass="ContestVC" customModule="Toy_Contest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xtV-JR-kVX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,7 +156,7 @@
         <!--ResultVC-->
         <scene sceneID="5ub-rr-efk">
             <objects>
-                <viewController id="Ict-XS-Dw1" customClass="ResultVC" customModule="Toy_Contest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Result" id="Ict-XS-Dw1" customClass="ResultVC" customModule="Toy_Contest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x64-F8-jco">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -220,6 +220,7 @@
                         <viewLayoutGuide key="safeArea" id="oNT-sP-Msi"/>
                     </view>
                     <connections>
+                        <outlet property="logoimage" destination="x3Z-uB-HwU" id="UPV-lV-O1A"/>
                         <outlet property="shareBtn" destination="BHz-qG-oid" id="cW4-au-a8S"/>
                     </connections>
                 </viewController>

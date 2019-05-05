@@ -69,7 +69,7 @@ class ContestManager {
             
         else if tapCnt == 15 {
             // 결과 화면으로 전환
-            allReset()
+            //allReset()
         }
     }
     

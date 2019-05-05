@@ -47,6 +47,13 @@ class ContestVC: UIViewController {
             manager.selectedToys.removeAll()
             
         }
+        print(manager.tapCnt)
+        if manager.tapCnt == 14 {
+            print("dddd")
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "Result") as? ResultVC {
+                self.present(vc, animated: true)
+            }
+        }
     }
     
     func getToys() {
