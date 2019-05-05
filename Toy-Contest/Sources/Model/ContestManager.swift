@@ -12,8 +12,8 @@ class ContestManager {
     //var selectedToy : Toy
     static let shared = ContestManager()
     
-    var fstToy = Toy()
-    var secToy = Toy()
+//    var fstToy = Toy()
+//    var secToy = Toy()
     var selectedToys = Array<Toy>()
     var winners = Array<Toy>()
     var maxRounds = 8
@@ -50,18 +50,21 @@ class ContestManager {
             maxRounds = 4
             curRounds = 1
             imgIdx = 0
+            //selectedToys.removeAll()
         }
         else if tapCnt == 12 {
             knckStage = "4강"
             maxRounds = 2
             curRounds = 1
             imgIdx = 0
+            //selectedToys.removeAll()
         }
         else if tapCnt == 14 {
             knckStage = "결승"
             maxRounds = 1
             curRounds = 1
             imgIdx = 0
+            //selectedToys.removeAll()
         }
             
         else if tapCnt == 15 {
@@ -79,16 +82,20 @@ class ContestManager {
         imgIdx = 0
     }
     
+    func getSelectedToys() -> [Toy] {
+        return selectedToys
+    }
+    
     func getKnckStage() -> String {
         return knckStage
     }
     
-    func getMaxRounds() -> String {
-        return "\(maxRounds)"
+    func getMaxRounds() -> Int {
+        return maxRounds
     }
     
-    func getCurRounds() -> String {
-        return "\(curRounds)"
+    func getCurRounds() -> Int {
+        return curRounds
     }
     
     func getImgIdx() -> Int {
@@ -96,9 +103,9 @@ class ContestManager {
     }
     
     
-    func roundsPrint() {
-        print(knckStage," ",curRounds,"/",maxRounds)
-    }
+//    func roundsPrint() {
+//        print(knckStage," ",curRounds,"/",maxRounds)
+//    }
     
     init() {}
 }

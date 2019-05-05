@@ -7,15 +7,20 @@
 //
 
 import Foundation
+import ObjectMapper
 
-class Toy {
-    var imgUrl = ""
-    var name = ""
+struct Toy : Mappable {
+    var user_id : String?
+    var item_name : String?
+    var img_path : String?
     
-    init() {}
+    init?(map: Map) {
+        
+    }
     
-    init(imgUrl : String, name : String) {
-        self.imgUrl = imgUrl
-        self.name = name
+    mutating func mapping(map: Map) {
+        user_id <- map["user_id"]
+        item_name <- map["item_name"]
+        img_path <- map["img_path"]
     }
 }

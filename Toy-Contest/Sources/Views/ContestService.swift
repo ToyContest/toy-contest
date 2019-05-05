@@ -11,9 +11,24 @@ import Alamofire
 import AlamofireObjectMapper
 
 struct ContestService : APIManager {
-    let toyImgUrl = url("/worldCup/:user")
+    static let shared = ContestService()
+    let contestUrl = url("/worldCup/")
     
-    func getToyList(completion: @escaping ([Toy]) -> Void) {
+    func getToyList(userId : String, completion: @escaping ([Toy]) -> Void) {
+        //let body = ["user_id" : userId]
+        let toyURL = contestUrl + userId
         
+        Alamofire.request(toyURL, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseObject { (res: DataResponse<ResponseArray<Toy>>) in
+            switch res.result {
+            case .success:
+                guard let data = res.result.value else { return }
+                guard let toys = data.data else {return}
+                completion(toys)
+                
+            // 실패했을 때
+            case .failure(let err):
+                print(err)
+            }
+        }
     }
 }

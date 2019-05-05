@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		579F0812227ECAFF0077036D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579F0811227ECAFF0077036D /* AppDelegate.swift */; };
 		579F0817227ECAFF0077036D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579F0815227ECAFF0077036D /* Main.storyboard */; };
-		579F0819227ECB000077036D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 579F0818227ECB000077036D /* Assets.xcassets */; };
 		579F081C227ECB000077036D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579F081A227ECB000077036D /* LaunchScreen.storyboard */; };
 		579F082C227ECED40077036D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579F082B227ECED40077036D /* Login.storyboard */; };
 		579F082E227ECEDF0077036D /* Contest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579F082D227ECEDF0077036D /* Contest.storyboard */; };
@@ -26,6 +25,9 @@
 		8EED53B3227F4BC700076086 /* KakaoMessageTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EED53B0227F4BC600076086 /* KakaoMessageTemplate.framework */; };
 		8EED53B4227F4BC700076086 /* KakaoCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EED53B1227F4BC600076086 /* KakaoCommon.framework */; };
 		8EED53B5227F4BC700076086 /* KakaoLink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EED53B2227F4BC700076086 /* KakaoLink.framework */; };
+		8EED53BA227F63BF00076086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EED53B9227F63BF00076086 /* Assets.xcassets */; };
+		8EED53BC227F779F00076086 /* ResponseArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EED53BB227F779F00076086 /* ResponseArray.swift */; };
+		8EED53BE227F77FC00076086 /* ResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EED53BD227F77FC00076086 /* ResponseBody.swift */; };
 		B638D6CD5FCC5F796B66E954 /* Pods_Toy_Contest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C97AF63DDF3F216FE3E0247 /* Pods_Toy_Contest.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +36,6 @@
 		579F080E227ECAFF0077036D /* Toy-Contest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toy-Contest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		579F0811227ECAFF0077036D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		579F0816227ECAFF0077036D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		579F0818227ECB000077036D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		579F081B227ECB000077036D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		579F081D227ECB000077036D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		579F082B227ECED40077036D /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -54,6 +55,9 @@
 		8EED53B1227F4BC600076086 /* KakaoCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoCommon.framework; sourceTree = "<group>"; };
 		8EED53B2227F4BC700076086 /* KakaoLink.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoLink.framework; sourceTree = "<group>"; };
 		8EED53B6227F4F9200076086 /* KakaoOpenSDK-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KakaoOpenSDK-Bridging-Header.h"; sourceTree = "<group>"; };
+		8EED53B9227F63BF00076086 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8EED53BB227F779F00076086 /* ResponseArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseArray.swift; sourceTree = "<group>"; };
+		8EED53BD227F77FC00076086 /* ResponseBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseBody.swift; sourceTree = "<group>"; };
 		D5BEC08F458742383E3641FF /* Pods-Toy-Contest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toy-Contest.release.xcconfig"; path = "Pods/Target Support Files/Pods-Toy-Contest/Pods-Toy-Contest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,8 +126,8 @@
 		579F0826227ECD6C0077036D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8EED53B9227F63BF00076086 /* Assets.xcassets */,
 				8EED53AE227F2DFC00076086 /* default.png */,
-				579F0818227ECB000077036D /* Assets.xcassets */,
 				579F082A227ECE730077036D /* Storyboards */,
 			);
 			path = Resources;
@@ -192,6 +196,8 @@
 			children = (
 				8E8A51C4227EF8CF00B868C7 /* Toy.swift */,
 				8E8A51C6227EFAF500B868C7 /* ContestManager.swift */,
+				8EED53BB227F779F00076086 /* ResponseArray.swift */,
+				8EED53BD227F77FC00076086 /* ResponseBody.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -269,9 +275,9 @@
 			files = (
 				579F082C227ECED40077036D /* Login.storyboard in Resources */,
 				579F081C227ECB000077036D /* LaunchScreen.storyboard in Resources */,
-				579F0819227ECB000077036D /* Assets.xcassets in Resources */,
 				579F0817227ECAFF0077036D /* Main.storyboard in Resources */,
 				579F082E227ECEDF0077036D /* Contest.storyboard in Resources */,
+				8EED53BA227F63BF00076086 /* Assets.xcassets in Resources */,
 				8EED53AF227F2DFC00076086 /* default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,10 +343,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EED53AD227F2D9900076086 /* UIViewController+extensions.swift in Sources */,
+				8EED53BC227F779F00076086 /* ResponseArray.swift in Sources */,
 				8EED53AB227F29F100076086 /* UIButton+imageFromUrl.swift in Sources */,
 				8E8A51C5227EF8CF00B868C7 /* Toy.swift in Sources */,
 				579F0812227ECAFF0077036D /* AppDelegate.swift in Sources */,
 				8EED53A4227F1D3B00076086 /* ContestService.swift in Sources */,
+				8EED53BE227F77FC00076086 /* ResponseBody.swift in Sources */,
 				8E8A51C0227EF43700B868C7 /* ResultVC.swift in Sources */,
 				8E8A51BE227EF42900B868C7 /* ContestVC.swift in Sources */,
 				8E8A51C7227EFAF500B868C7 /* ContestManager.swift in Sources */,
