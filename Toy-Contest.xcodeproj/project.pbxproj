@@ -7,11 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		579C42F4227F128E004769F4 /* UIButton+applyCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579C42F3227F128E004769F4 /* UIButton+applyCorner.swift */; };
+		579C42FC227F3A9A004769F4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579C42FB227F3A9A004769F4 /* FeedViewController.swift */; };
+		579C42FE227F3B44004769F4 /* ArchiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579C42FD227F3B44004769F4 /* ArchiveViewController.swift */; };
+		579C4300227F3B80004769F4 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579C42FF227F3B80004769F4 /* CustomTabBarController.swift */; };
+		579C4302227F3DF1004769F4 /* TempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579C4301227F3DF1004769F4 /* TempViewController.swift */; };
 		579F0812227ECAFF0077036D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579F0811227ECAFF0077036D /* AppDelegate.swift */; };
 		579F0817227ECAFF0077036D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579F0815227ECAFF0077036D /* Main.storyboard */; };
 		579F081C227ECB000077036D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579F081A227ECB000077036D /* LaunchScreen.storyboard */; };
 		579F082C227ECED40077036D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579F082B227ECED40077036D /* Login.storyboard */; };
 		579F082E227ECEDF0077036D /* Contest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579F082D227ECEDF0077036D /* Contest.storyboard */; };
+		579F084E227EF0340077036D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579F084D227EF0340077036D /* LoginViewController.swift */; };
+		579F0850227EF0690077036D /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579F084F227EF0690077036D /* SplashViewController.swift */; };
+		579F0852227EF07C0077036D /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579F0851227EF07C0077036D /* JoinViewController.swift */; };
+		579F0854227EF7040077036D /* UIViewController+simpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579F0853227EF7040077036D /* UIViewController+simpleAlert.swift */; };
+		579F0856227EFCC70077036D /* SelectCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579F0855227EFCC70077036D /* SelectCategoryViewController.swift */; };
 		8E8A51BE227EF42900B868C7 /* ContestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A51BD227EF42900B868C7 /* ContestVC.swift */; };
 		8E8A51C0227EF43700B868C7 /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A51BF227EF43700B868C7 /* ResultVC.swift */; };
 		8E8A51C5227EF8CF00B868C7 /* Toy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A51C4227EF8CF00B868C7 /* Toy.swift */; };
@@ -29,10 +39,17 @@
 		8EED53BC227F779F00076086 /* ResponseArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EED53BB227F779F00076086 /* ResponseArray.swift */; };
 		8EED53BE227F77FC00076086 /* ResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EED53BD227F77FC00076086 /* ResponseBody.swift */; };
 		B638D6CD5FCC5F796B66E954 /* Pods_Toy_Contest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C97AF63DDF3F216FE3E0247 /* Pods_Toy_Contest.framework */; };
+		F572A9A0227F47A9002889D8 /* ToyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F572A99F227F47A9002889D8 /* ToyCollectionViewCell.swift */; };
+		F572A9A4227F489E002889D8 /* ToyDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F572A9A3227F489E002889D8 /* ToyDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D5238C43BDB025466F43B43 /* Pods-Toy-Contest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toy-Contest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Toy-Contest/Pods-Toy-Contest.debug.xcconfig"; sourceTree = "<group>"; };
+		579C42F3227F128E004769F4 /* UIButton+applyCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+applyCorner.swift"; sourceTree = "<group>"; };
+		579C42FB227F3A9A004769F4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		579C42FD227F3B44004769F4 /* ArchiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveViewController.swift; sourceTree = "<group>"; };
+		579C42FF227F3B80004769F4 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		579C4301227F3DF1004769F4 /* TempViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempViewController.swift; sourceTree = "<group>"; };
 		579F080E227ECAFF0077036D /* Toy-Contest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toy-Contest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		579F0811227ECAFF0077036D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		579F0816227ECAFF0077036D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +57,11 @@
 		579F081D227ECB000077036D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		579F082B227ECED40077036D /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		579F082D227ECEDF0077036D /* Contest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Contest.storyboard; sourceTree = "<group>"; };
+		579F084D227EF0340077036D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		579F084F227EF0690077036D /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		579F0851227EF07C0077036D /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
+		579F0853227EF7040077036D /* UIViewController+simpleAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+simpleAlert.swift"; sourceTree = "<group>"; };
+		579F0855227EFCC70077036D /* SelectCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCategoryViewController.swift; sourceTree = "<group>"; };
 		5C97AF63DDF3F216FE3E0247 /* Pods_Toy_Contest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Toy_Contest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E8A51BD227EF42900B868C7 /* ContestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContestVC.swift; sourceTree = "<group>"; };
 		8E8A51BF227EF43700B868C7 /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
@@ -59,6 +81,8 @@
 		8EED53BB227F779F00076086 /* ResponseArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseArray.swift; sourceTree = "<group>"; };
 		8EED53BD227F77FC00076086 /* ResponseBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseBody.swift; sourceTree = "<group>"; };
 		D5BEC08F458742383E3641FF /* Pods-Toy-Contest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toy-Contest.release.xcconfig"; path = "Pods/Target Support Files/Pods-Toy-Contest/Pods-Toy-Contest.release.xcconfig"; sourceTree = "<group>"; };
+		F572A99F227F47A9002889D8 /* ToyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyCollectionViewCell.swift; sourceTree = "<group>"; };
+		F572A9A3227F489E002889D8 /* ToyDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +135,16 @@
 			children = (
 				8E8A51BD227EF42900B868C7 /* ContestVC.swift */,
 				8E8A51BF227EF43700B868C7 /* ResultVC.swift */,
+				579F084D227EF0340077036D /* LoginViewController.swift */,
+				579F084F227EF0690077036D /* SplashViewController.swift */,
+				579F0851227EF07C0077036D /* JoinViewController.swift */,
+				579F0855227EFCC70077036D /* SelectCategoryViewController.swift */,
+				579C42FD227F3B44004769F4 /* ArchiveViewController.swift */,
+				579C42FF227F3B80004769F4 /* CustomTabBarController.swift */,
+				579C4301227F3DF1004769F4 /* TempViewController.swift */,
+				579C42FB227F3A9A004769F4 /* FeedViewController.swift */,
+				F572A99F227F47A9002889D8 /* ToyCollectionViewCell.swift */,
+				F572A9A3227F489E002889D8 /* ToyDetailVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -160,6 +194,8 @@
 			children = (
 				8EED53AA227F29F100076086 /* UIButton+imageFromUrl.swift */,
 				8EED53AC227F2D9900076086 /* UIViewController+extensions.swift */,
+				579F0853227EF7040077036D /* UIViewController+simpleAlert.swift */,
+				579C42F3227F128E004769F4 /* UIButton+applyCorner.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -354,6 +390,19 @@
 				8E8A51C7227EFAF500B868C7 /* ContestManager.swift in Sources */,
 				8EED53A6227F1D6C00076086 /* APIManager.swift in Sources */,
 				8EED53A8227F1DCA00076086 /* NetworkResult.swift in Sources */,
+				579F084E227EF0340077036D /* LoginViewController.swift in Sources */,
+				F572A9A0227F47A9002889D8 /* ToyCollectionViewCell.swift in Sources */,
+				579C42FE227F3B44004769F4 /* ArchiveViewController.swift in Sources */,
+				579C4300227F3B80004769F4 /* CustomTabBarController.swift in Sources */,
+				579C42F4227F128E004769F4 /* UIButton+applyCorner.swift in Sources */,
+				579F0856227EFCC70077036D /* SelectCategoryViewController.swift in Sources */,
+				579C4302227F3DF1004769F4 /* TempViewController.swift in Sources */,
+				579F0812227ECAFF0077036D /* AppDelegate.swift in Sources */,
+				579F0854227EF7040077036D /* UIViewController+simpleAlert.swift in Sources */,
+				579F0852227EF07C0077036D /* JoinViewController.swift in Sources */,
+				579C42FC227F3A9A004769F4 /* FeedViewController.swift in Sources */,
+				F572A9A4227F489E002889D8 /* ToyDetailVC.swift in Sources */,
+				579F0850227EF0690077036D /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
