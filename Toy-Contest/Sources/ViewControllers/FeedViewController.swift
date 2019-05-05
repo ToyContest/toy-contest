@@ -79,7 +79,8 @@ extension FeedViewController: UICollectionViewDataSource
     // 현재는 musicList 배열의 count 갯수 만큼 반환합니다.
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
-        return toyList.count
+        //return toyList.count
+        return 10
     }
     
     // 각 index 에 해당하는 셀에 데이터를 주입합니다.
@@ -87,11 +88,11 @@ extension FeedViewController: UICollectionViewDataSource
     {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ToyCollectionViewCell", for: indexPath) as! ToyCollectionViewCell
         
-        let toy = toyList[indexPath.row]
+        //let toy = toyList[indexPath.row]
         
-        cell.toyImg.image = toy.toyImg
-        cell.toyTitle.text = toy.toyTitle
-        cell.category.text = toy.toyCategory
+//        cell.toyImg.image = toy.toyImg
+//        cell.toyTitle.text = toy.toyTitle
+//        cell.category.text = toy.toyCategory
         return cell
     }
 }
@@ -109,12 +110,12 @@ extension FeedViewController: UICollectionViewDelegate
         
         let dvc = storyboard?.instantiateViewController(withIdentifier: "ToyDetailVC") as! ToyDetailVC
         
-        let toy = toyList[indexPath.row]
-        
-        dvc.toyImg = toy.toyImg
-        dvc.toyTitle = toy.toyTitle
-        dvc.category = toy.toyCategory
-        navigationController?.pushViewController(dvc, animated: true)
+//        let toy = toyList[indexPath.row]
+//
+//        dvc.toyImg = toy.toyImg
+//        dvc.toyTitle = toy.toyTitle
+//        dvc.category = toy.toyCategory
+        self.present(dvc, animated: true)
     }
 }
 
@@ -124,28 +125,10 @@ extension FeedViewController: UICollectionViewDelegateFlowLayout
     // Collection View Cell 의 width, height 를 지정할 수 있습니다.
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
     {
-        let width: CGFloat = (view.frame.width - 45) / 2
-        let height: CGFloat = (view.frame.width - 45) / 2 + 57
+        let width: CGFloat = (view.frame.width - 100) / 2
+        let height: CGFloat = width * 234 / 137
         
         return CGSize(width: width, height: height)
-    }
-    
-    // minimumLineSpacingForSectionAt 은 수직 방향에서의 Spacing 을 의미합니다.
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat
-    {
-        return 15
-    }
-    
-    // minimumInteritemSpacingForSectionAt 은 수평 방향에서의 Spacing 을 의미합니다.
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat
-    {
-        return 15
-    }
-    
-    // insetForSectionAt 섹션 내부 여백을 말합니다.
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        
-        return UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
     }
 }
 

@@ -22,8 +22,9 @@ class ToyCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        toyImg.layer.cornerRadius = 3
-        toyImg.layer.masksToBounds = true
+        self.layer.cornerRadius = 16
+        self.layer.masksToBounds = true
+        
     }
     
     @IBAction func likeBtn()

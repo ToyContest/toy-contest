@@ -29,7 +29,10 @@ class SelectCategoryViewController: UIViewController {
     }
     
     @IBAction func goToMain(_ sender: Any) {
-        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let vc = storyboard.instantiateViewController(withIdentifier: "MainTab") as? CustomTabBarController {
+            self.present(vc, animated: true)
+        }
     }
     
     func applyCornerOfCatefgoryBtn() {

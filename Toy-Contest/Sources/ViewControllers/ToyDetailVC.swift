@@ -23,7 +23,7 @@ class ToyDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setContents()
+        //setContents()
         setToyImgView()
     }
     

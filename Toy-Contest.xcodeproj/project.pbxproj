@@ -24,15 +24,6 @@
 		579F0854227EF7040077036D /* UIViewController+simpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579F0853227EF7040077036D /* UIViewController+simpleAlert.swift */; };
 		579F0856227EFCC70077036D /* SelectCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579F0855227EFCC70077036D /* SelectCategoryViewController.swift */; };
 		B638D6CD5FCC5F796B66E954 /* Pods_Toy_Contest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C97AF63DDF3F216FE3E0247 /* Pods_Toy_Contest.framework */; };
-		F50EF494227F63EB00A00694 /* btnLikeon.png in Resources */ = {isa = PBXBuildFile; fileRef = F50EF491227F63EB00A00694 /* btnLikeon.png */; };
-		F50EF495227F63EB00A00694 /* btnLikeon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F50EF492227F63EB00A00694 /* btnLikeon@2x.png */; };
-		F50EF496227F63EB00A00694 /* btnLikeon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F50EF493227F63EB00A00694 /* btnLikeon@3x.png */; };
-		F50EF49A227F64A000A00694 /* btnLikeoff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F50EF497227F64A000A00694 /* btnLikeoff@2x.png */; };
-		F50EF49B227F64A000A00694 /* btnLikeoff@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F50EF498227F64A000A00694 /* btnLikeoff@3x.png */; };
-		F50EF49C227F64A000A00694 /* btnLikeoff.png in Resources */ = {isa = PBXBuildFile; fileRef = F50EF499227F64A000A00694 /* btnLikeoff.png */; };
-		F50EF4A0227F6B0C00A00694 /* btnGacha.png in Resources */ = {isa = PBXBuildFile; fileRef = F50EF49D227F6B0B00A00694 /* btnGacha.png */; };
-		F50EF4A1227F6B0C00A00694 /* btnGacha@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F50EF49E227F6B0B00A00694 /* btnGacha@2x.png */; };
-		F50EF4A2227F6B0C00A00694 /* btnGacha@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F50EF49F227F6B0B00A00694 /* btnGacha@3x.png */; };
 		F572A9A0227F47A9002889D8 /* ToyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F572A99F227F47A9002889D8 /* ToyCollectionViewCell.swift */; };
 		F572A9A4227F489E002889D8 /* ToyDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F572A9A3227F489E002889D8 /* ToyDetailVC.swift */; };
 		F572A9A6227F4907002889D8 /* Toy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F572A9A5227F4907002889D8 /* Toy.swift */; };
@@ -60,15 +51,6 @@
 		579F0855227EFCC70077036D /* SelectCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCategoryViewController.swift; sourceTree = "<group>"; };
 		5C97AF63DDF3F216FE3E0247 /* Pods_Toy_Contest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Toy_Contest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5BEC08F458742383E3641FF /* Pods-Toy-Contest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toy-Contest.release.xcconfig"; path = "Pods/Target Support Files/Pods-Toy-Contest/Pods-Toy-Contest.release.xcconfig"; sourceTree = "<group>"; };
-		F50EF491227F63EB00A00694 /* btnLikeon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnLikeon.png; sourceTree = "<group>"; };
-		F50EF492227F63EB00A00694 /* btnLikeon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnLikeon@2x.png"; sourceTree = "<group>"; };
-		F50EF493227F63EB00A00694 /* btnLikeon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnLikeon@3x.png"; sourceTree = "<group>"; };
-		F50EF497227F64A000A00694 /* btnLikeoff@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnLikeoff@2x.png"; sourceTree = "<group>"; };
-		F50EF498227F64A000A00694 /* btnLikeoff@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnLikeoff@3x.png"; sourceTree = "<group>"; };
-		F50EF499227F64A000A00694 /* btnLikeoff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnLikeoff.png; sourceTree = "<group>"; };
-		F50EF49D227F6B0B00A00694 /* btnGacha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnGacha.png; sourceTree = "<group>"; };
-		F50EF49E227F6B0B00A00694 /* btnGacha@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnGacha@2x.png"; sourceTree = "<group>"; };
-		F50EF49F227F6B0B00A00694 /* btnGacha@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnGacha@3x.png"; sourceTree = "<group>"; };
 		F572A99F227F47A9002889D8 /* ToyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyCollectionViewCell.swift; sourceTree = "<group>"; };
 		F572A9A3227F489E002889D8 /* ToyDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyDetailVC.swift; sourceTree = "<group>"; };
 		F572A9A5227F4907002889D8 /* Toy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toy.swift; sourceTree = "<group>"; };
@@ -107,15 +89,6 @@
 		579F0810227ECAFF0077036D /* Toy-Contest */ = {
 			isa = PBXGroup;
 			children = (
-				F50EF49D227F6B0B00A00694 /* btnGacha.png */,
-				F50EF49E227F6B0B00A00694 /* btnGacha@2x.png */,
-				F50EF49F227F6B0B00A00694 /* btnGacha@3x.png */,
-				F50EF499227F64A000A00694 /* btnLikeoff.png */,
-				F50EF497227F64A000A00694 /* btnLikeoff@2x.png */,
-				F50EF498227F64A000A00694 /* btnLikeoff@3x.png */,
-				F50EF491227F63EB00A00694 /* btnLikeon.png */,
-				F50EF492227F63EB00A00694 /* btnLikeon@2x.png */,
-				F50EF493227F63EB00A00694 /* btnLikeon@3x.png */,
 				579F0811227ECAFF0077036D /* AppDelegate.swift */,
 				579F0827227ECD6E0077036D /* Sources */,
 				579F0826227ECD6C0077036D /* Resources */,
@@ -282,19 +255,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				579F082C227ECED40077036D /* Login.storyboard in Resources */,
-				F50EF4A2227F6B0C00A00694 /* btnGacha@3x.png in Resources */,
-				F50EF49C227F64A000A00694 /* btnLikeoff.png in Resources */,
-				F50EF4A1227F6B0C00A00694 /* btnGacha@2x.png in Resources */,
-				F50EF495227F63EB00A00694 /* btnLikeon@2x.png in Resources */,
 				579F081C227ECB000077036D /* LaunchScreen.storyboard in Resources */,
 				579F0819227ECB000077036D /* Assets.xcassets in Resources */,
-				F50EF496227F63EB00A00694 /* btnLikeon@3x.png in Resources */,
-				F50EF49B227F64A000A00694 /* btnLikeoff@3x.png in Resources */,
 				579F0817227ECAFF0077036D /* Main.storyboard in Resources */,
-				F50EF494227F63EB00A00694 /* btnLikeon.png in Resources */,
-				F50EF49A227F64A000A00694 /* btnLikeoff@2x.png in Resources */,
 				579F082E227ECEDF0077036D /* Contest.storyboard in Resources */,
-				F50EF4A0227F6B0C00A00694 /* btnGacha.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

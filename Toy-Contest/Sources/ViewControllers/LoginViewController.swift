@@ -16,6 +16,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var nicknameViewConstraint: NSLayoutConstraint!
     @IBOutlet weak var loginBtn: UIButton!
     
+    var timer: Timer!
+    
     var constraintInitValue: CGFloat = 0
     var check = true
     
@@ -62,6 +64,22 @@ class LoginViewController: UIViewController {
         }
     }
     
+    func addTimer() {
+        timer = Timer.scheduledTimer(timeInterval: TimeInterval(4), target: self, selector: #selector(handleTimer), userInfo: nil, repeats: true)
+    }
+    
+    func invalidTimer() {
+        timer.invalidate()
+    }
+    
+    @objc func handleTimer() {
+        UIView.animate(withDuration: 2.0, delay: 0, options: .curveEaseInOut, animations: {
+            
+        }) { (_) in
+            
+        }
+        
+    }
 
 }
 
