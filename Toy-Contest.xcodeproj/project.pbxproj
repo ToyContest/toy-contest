@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		579F0812227ECAFF0077036D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579F0811227ECAFF0077036D /* AppDelegate.swift */; };
-		579F0814227ECAFF0077036D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579F0813227ECAFF0077036D /* ViewController.swift */; };
 		579F0817227ECAFF0077036D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579F0815227ECAFF0077036D /* Main.storyboard */; };
 		579F0819227ECB000077036D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 579F0818227ECB000077036D /* Assets.xcassets */; };
 		579F081C227ECB000077036D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579F081A227ECB000077036D /* LaunchScreen.storyboard */; };
 		579F082C227ECED40077036D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579F082B227ECED40077036D /* Login.storyboard */; };
 		579F082E227ECEDF0077036D /* Contest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579F082D227ECEDF0077036D /* Contest.storyboard */; };
+		8E8A51BE227EF42900B868C7 /* ContestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A51BD227EF42900B868C7 /* ContestVC.swift */; };
+		8E8A51C0227EF43700B868C7 /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A51BF227EF43700B868C7 /* ResultVC.swift */; };
+		8E8A51C5227EF8CF00B868C7 /* Toy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A51C4227EF8CF00B868C7 /* Toy.swift */; };
+		8E8A51C7227EFAF500B868C7 /* ContestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A51C6227EFAF500B868C7 /* ContestManager.swift */; };
 		B638D6CD5FCC5F796B66E954 /* Pods_Toy_Contest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C97AF63DDF3F216FE3E0247 /* Pods_Toy_Contest.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,7 +24,6 @@
 		3D5238C43BDB025466F43B43 /* Pods-Toy-Contest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toy-Contest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Toy-Contest/Pods-Toy-Contest.debug.xcconfig"; sourceTree = "<group>"; };
 		579F080E227ECAFF0077036D /* Toy-Contest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toy-Contest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		579F0811227ECAFF0077036D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		579F0813227ECAFF0077036D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		579F0816227ECAFF0077036D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		579F0818227ECB000077036D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		579F081B227ECB000077036D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,6 +31,10 @@
 		579F082B227ECED40077036D /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		579F082D227ECEDF0077036D /* Contest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Contest.storyboard; sourceTree = "<group>"; };
 		5C97AF63DDF3F216FE3E0247 /* Pods_Toy_Contest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Toy_Contest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E8A51BD227EF42900B868C7 /* ContestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContestVC.swift; sourceTree = "<group>"; };
+		8E8A51BF227EF43700B868C7 /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
+		8E8A51C4227EF8CF00B868C7 /* Toy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toy.swift; sourceTree = "<group>"; };
+		8E8A51C6227EFAF500B868C7 /* ContestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContestManager.swift; sourceTree = "<group>"; };
 		D5BEC08F458742383E3641FF /* Pods-Toy-Contest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toy-Contest.release.xcconfig"; path = "Pods/Target Support Files/Pods-Toy-Contest/Pods-Toy-Contest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,16 +82,10 @@
 		579F0823227ECD650077036D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				579F0813227ECAFF0077036D /* ViewController.swift */,
+				8E8A51BD227EF42900B868C7 /* ContestVC.swift */,
+				8E8A51BF227EF43700B868C7 /* ResultVC.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		579F0824227ECD680077036D /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		579F0825227ECD6A0077036D /* Supporting Files */ = {
@@ -108,9 +108,9 @@
 		579F0827227ECD6E0077036D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				8E8A51C3227EF8C600B868C7 /* Views */,
 				579F0829227ECE490077036D /* Extensions */,
 				579F0828227ECE410077036D /* Networking */,
-				579F0824227ECD680077036D /* Views */,
 				579F0823227ECD650077036D /* ViewControllers */,
 			);
 			path = Sources;
@@ -148,6 +148,15 @@
 				D5BEC08F458742383E3641FF /* Pods-Toy-Contest.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E8A51C3227EF8C600B868C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8E8A51C4227EF8CF00B868C7 /* Toy.swift */,
+				8E8A51C6227EFAF500B868C7 /* ContestManager.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		EF6DB91ED55B176B0251B9BA /* Frameworks */ = {
@@ -286,8 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				579F0814227ECAFF0077036D /* ViewController.swift in Sources */,
+				8E8A51C5227EF8CF00B868C7 /* Toy.swift in Sources */,
 				579F0812227ECAFF0077036D /* AppDelegate.swift in Sources */,
+				8E8A51C0227EF43700B868C7 /* ResultVC.swift in Sources */,
+				8E8A51BE227EF42900B868C7 /* ContestVC.swift in Sources */,
+				8E8A51C7227EFAF500B868C7 /* ContestManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +448,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CXVMJWVF32;
-				INFOPLIST_FILE = "Toy-Contest/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Toy-Contest/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,7 +467,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CXVMJWVF32;
-				INFOPLIST_FILE = "Toy-Contest/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Toy-Contest/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
