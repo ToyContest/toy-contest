@@ -28,6 +28,10 @@ class SelectCategoryViewController: UIViewController {
         applyCornerOfCatefgoryBtn()
     }
     
+    @IBAction func goToMain(_ sender: Any) {
+        
+    }
+    
     func applyCornerOfCatefgoryBtn() {
         for btn in categoryBtns {
             btn.applyCorner()
