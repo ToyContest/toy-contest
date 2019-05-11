@@ -207,19 +207,29 @@
                                     <constraint firstAttribute="width" constant="343" id="FBK-Zz-w0V"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cuty" translatesAutoresizingMaskIntoConstraints="NO" id="lUv-gQ-f1b">
+                                <rect key="frame" x="15" y="0.0" width="346" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lUv-gQ-f1b" secondAttribute="height" multiplier="346:225" id="Tq4-xX-LPK"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="oNT-sP-Msi" firstAttribute="top" secondItem="lUv-gQ-f1b" secondAttribute="top" constant="20" id="B4v-ft-BKJ"/>
                             <constraint firstItem="Raw-tD-cNi" firstAttribute="top" secondItem="x64-F8-jco" secondAttribute="top" id="IkD-oJ-CAQ"/>
                             <constraint firstItem="Raw-tD-cNi" firstAttribute="leading" secondItem="oNT-sP-Msi" secondAttribute="leading" id="JPq-q2-2jY"/>
                             <constraint firstItem="Raw-tD-cNi" firstAttribute="bottom" secondItem="x64-F8-jco" secondAttribute="bottom" id="Mhx-Mb-hHE"/>
                             <constraint firstItem="Raw-tD-cNi" firstAttribute="trailing" secondItem="oNT-sP-Msi" secondAttribute="trailing" id="S4n-p9-nXy"/>
                             <constraint firstItem="UUA-jZ-Q8j" firstAttribute="centerX" secondItem="oNT-sP-Msi" secondAttribute="centerX" id="ZmY-sU-kpc"/>
+                            <constraint firstItem="oNT-sP-Msi" firstAttribute="trailing" secondItem="lUv-gQ-f1b" secondAttribute="trailing" constant="14" id="dDP-iw-kNx"/>
                             <constraint firstItem="UUA-jZ-Q8j" firstAttribute="centerY" secondItem="oNT-sP-Msi" secondAttribute="centerY" multiplier="1.1" id="jeU-x9-cFM"/>
+                            <constraint firstItem="lUv-gQ-f1b" firstAttribute="leading" secondItem="oNT-sP-Msi" secondAttribute="leading" constant="15" id="xFA-Lt-fKS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oNT-sP-Msi"/>
                     </view>
                     <connections>
+                        <outlet property="cutyImage" destination="lUv-gQ-f1b" id="tm3-1x-R0B"/>
                         <outlet property="logoimage" destination="x3Z-uB-HwU" id="UPV-lV-O1A"/>
                         <outlet property="shareBtn" destination="BHz-qG-oid" id="cW4-au-a8S"/>
                     </connections>
@@ -230,6 +240,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cuty" width="346" height="225"/>
         <image name="gachaBottom" width="375" height="221"/>
         <image name="gachaMid" width="375" height="448.5"/>
         <image name="gachaTop" width="375" height="200"/>

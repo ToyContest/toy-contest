@@ -11,8 +11,10 @@ import UIKit
 class ResultVC: UIViewController {
     @IBOutlet weak var shareBtn: UIButton!
     @IBOutlet weak var logoimage: UIImageView!
+    @IBOutlet weak var cutyImage: UIImageView!
     
     var timer: Timer!
+    var newTimer: Timer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,10 +33,24 @@ class ResultVC: UIViewController {
     
     func addTimer() {
         timer = Timer.scheduledTimer(timeInterval: TimeInterval(2), target: self, selector: #selector(handleTimer), userInfo: nil, repeats: true)
+        newTimer = Timer.scheduledTimer(timeInterval: TimeInterval(1.7), target: self, selector: #selector(handleNewTimer), userInfo: nil, repeats: true)
+        
     }
     
     func invalidTimer() {
         timer.invalidate()
+        newTimer.invalidate()
+    }
+    
+    @objc func handleNewTimer() {
+        UIView.animate(withDuration: 0.75, delay: 0, options: .curveEaseInOut, animations: {
+            self.cutyImage.transform = CGAffineTransform(translationX: 0, y: 10).concatenating(CGAffineTransform(scaleX: 1.1, y: 1.1))
+        }) { (_) in
+            UIView.animate(withDuration: 0.75, delay: 0.1, options: .curveEaseInOut, animations: {
+                self.cutyImage.transform = CGAffineTransform(translationX: 0, y: 0).concatenating(CGAffineTransform(scaleX: 1.0, y: 1.0))
+            })
+        }
+        self.view.layoutIfNeeded()
     }
     
     @objc func handleTimer() {
